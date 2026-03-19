@@ -29,6 +29,10 @@
   background: linear-gradient(180deg, #f8fafc 0%, #f1f5f9 100%) !important;
 }
 
+:global(.vtex-product-summary-2-x-priceContainer) {
+  padding: 0 !important;
+}
+
 :global(.vtex-product-summary-2-x-discountContainer) {
   display: none !important;
 }
@@ -108,7 +112,7 @@
 :global(.vtex-product-summary-2-x-element) :global(.vtex-button) {
   background: #101828 !important;
   color: #fff !important;
-  border: none!important;
+  border: none !important;
 }
 
 :global(.vtex-reviews-and-ratings-1-x-star) {
