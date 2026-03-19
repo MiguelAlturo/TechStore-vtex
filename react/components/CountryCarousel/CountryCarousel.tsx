@@ -185,12 +185,14 @@ const CountryCarousel: React.FC = () => {
               {status === 'error' && '❌ Verifica los datos'}
             </div>
 
-            <button
-              className={handles.button}
-              onClick={() => submitLead(name, email)}
-            >
-              {status === 'loading' ? 'Enviando...' : 'Enviar solicitud'}
-            </button>
+            <div style={{ display: 'flex', justifyContent: 'center' }}>
+              <button
+                className={handles.button}
+                onClick={() => submitLead(name, email)}
+              >
+                {status === 'loading' ? 'Enviando...' : 'Enviar'}
+              </button>
+            </div>
           </div>
         </div>
       )}
