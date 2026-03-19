@@ -40,12 +40,20 @@
   line-height: 1 !important;
 }
 
+:global(.vtex-tab-layout-0-x-listItem) :global(.vtex-button) {
+  background-color: transparent !important;
+}
+
+:global(.vtex-tab-layout-0-x-listItemActive  ) :global(.vtex-button) {
+  background-color: #fff !important;
+}
+
 :global(.vtex-tab-layout-0-x-listItemChildren):hover {
   color: #0f3460 !important;
 }
 
 :global(.vtex-tab-layout-0-x-listItemChildrenActive) {
-  color: #0a0a0a !important;
+  color: #0f3460 !important;
   background: #ffffff !important;
   font-weight: 700 !important;
   font-size: 14px !important;
@@ -61,67 +69,10 @@
   :global(.vtex-tab-layout-0-x-listItemChildren) {
   background: #ffffff !important;
   border-radius: 50px !important;
-  color: #0a0a0a !important;
+  color: #0f3460 !important;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12) !important;
-}
-
-:global(.vtex-tab-layout-0-x-listItemActive)
-  :global(.vtex-tab-layout-0-x-listItemChildren) {
-  background: #ffffff !important;
-  border-radius: 50px !important;
-}
-
-:global(.vtex-tab-layout-0-x-listItemChildren):hover {
-  color: #0f3460 !important;
-}
-
-:global(.vtex-tab-layout-0-x-listItemChildrenActive) {
-  color: #0f3460 !important;
-  background: #ffffff !important;
-  font-weight: 700 !important;
-  font-size: 14px !important;
-  border-radius: 50px !important;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12) !important;
-  line-height: 1 !important;
-}
-
-:global(.vtex-tab-layout-0-x-listItemActive)
-  :global(.vtex-tab-layout-0-x-listItemChildren) {
-  background: #ffffff !important;
-  border-radius: 50px !important;
-}
-
-:global(.vtex-tab-layout-0-x-listItemChildren):hover {
-  color: #0f3460 !important;
-}
-
-:global(.vtex-tab-layout-0-x-listItemChildrenActive) {
-  color: #0f3460 !important;
-  background: #ffffff !important;
-  font-weight: 700 !important;
-  border-radius: 50px !important;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12) !important;
-}
-
-:global(.vtex-tab-layout-0-x-listItemActive)
-  :global(.vtex-tab-layout-0-x-listItemChildren) {
-  background: #ffffff !important;
-  border-radius: 50px !important;
 }
 
 :global(.vtex-tab-layout-0-x-contentContainer) {
   padding: 0 !important;
-}
-
-@media (max-width: 768px) {
-  :global(.vtex-tab-layout-0-x-listContainer) {
-    overflow-x: auto !important;
-    justify-content: flex-start !important;
-    scrollbar-width: none !important;
-  }
-
-  :global(.vtex-tab-layout-0-x-listItemChildren) {
-    padding: 10px 18px !important;
-    font-size: 12px !important;
-  }
 }

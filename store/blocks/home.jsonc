@@ -36,15 +36,17 @@
     "title": "Banners Promocionales",
     "props": {
       "fullWidth": true,
-      "blockClass": "promo-row",
-      "colGap": 15
+      "blockClass": "promo-row"
     },
     "children": ["flex-layout.col#promo1", "flex-layout.col#promo2"]
   },
 
   "flex-layout.col#promo1": {
     "title": "Banner Promo 1",
-    "props": { "width": "50%", "blockClass": "promo-col" },
+    "props": {
+      "width": "50%",
+      "blockClass": "promo-col"
+    },
     "children": ["info-card#promo1"]
   },
 
@@ -63,7 +65,10 @@
 
   "flex-layout.col#promo2": {
     "title": "Banner Promo 2",
-    "props": { "width": "50%", "blockClass": "promo-col" },
+    "props": {
+      "width": "50%",
+      "blockClass": "promo-col"
+    },
     "children": ["info-card#promo2"]
   },
 

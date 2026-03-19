@@ -48,7 +48,8 @@
     "props": {
       "tabId": "all",
       "label": "Todos",
-      "defaultActiveTab": true
+      "defaultActiveTab": true,
+      "blockClass": "tabButton"
     }
   },
 
@@ -56,7 +57,8 @@
     "title": "Tab Audio",
     "props": {
       "tabId": "audio",
-      "label": "Audio"
+      "label": "Audio",
+      "blockClass": "tabButton"
     }
   },
 
@@ -64,7 +66,8 @@
     "title": "Tab Wearables",
     "props": {
       "tabId": "wearables",
-      "label": "Wearables"
+      "label": "Wearables",
+      "blockClass": "tabButton"
     }
   },
 
@@ -72,7 +75,8 @@
     "title": "Tab Computadoras",
     "props": {
       "tabId": "computers",
-      "label": "Computadoras"
+      "label": "Computadoras",
+      "blockClass": "tabButton"
     }
   },
 
@@ -213,9 +217,10 @@
   "slider-layout#products": {
     "title": "Slider de Productos Tabs",
     "props": {
-      "itemsPerPage": 4,
-      "showPaginationDots": "never",
+      "itemsPerPage": { "desktop": 4, "tablet": 2, "mobile": 1 },
+      "showPaginationDots": "always",
       "showNavigationArrows": "always",
+      "usePagination": true,
       "gap": "ph4",
       "fullWidth": true,
       "blockClass": "productsSlider"

@@ -101,9 +101,14 @@
   transition: all 0.3s ease !important;
 }
 
+:global(.vtex-add-to-cart-button-0-x-buttonText--buyButton) {
+  color: #fff !important;
+}
+
 :global(.vtex-button) {
   background: #101828 !important;
   color: #fff !important;
+  border: none!important;
 }
 
 :global(.vtex-reviews-and-ratings-1-x-star) {
