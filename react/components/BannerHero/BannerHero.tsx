@@ -22,6 +22,10 @@ const CSS_HANDLES = [
   'bannerHero--bottomRight',
   'bannerHero__title',
   'bannerHero__subtitle',
+  'bannerHero__skeleton',
+  'bannerHero__skeletonImage',
+  'bannerHero__skeletonTitle',
+  'bannerHero__skeletonSubtitle',
 ]
 
 interface BannerHeroProps {
@@ -31,6 +35,7 @@ interface BannerHeroProps {
   textPosition?: TextPosition
   textColor?: string
   blockClass?: string
+  isLoading?: boolean
 }
 
 const BannerHero: React.FC<BannerHeroProps> = ({
@@ -40,6 +45,7 @@ const BannerHero: React.FC<BannerHeroProps> = ({
   textPosition = 'bottom-left',
   textColor = '#FFFFFF',
   blockClass = '',
+  isLoading = false,
 }) => {
   const handles = useCssHandles(CSS_HANDLES, { blockClass })
 
@@ -104,6 +110,71 @@ const BannerHero: React.FC<BannerHeroProps> = ({
       default:
         return { ...baseStyle, bottom: '40px', left: '40px', textAlign: 'left' }
     }
+  }
+
+  if (isLoading) {
+    return (
+      <div
+        className={handles.bannerHero__skeleton}
+        style={{
+          position: 'relative',
+          width: '100%',
+          height: '400px',
+          overflow: 'hidden',
+          backgroundColor: '#e5e7eb',
+        }}
+      >
+        <div
+          className={handles.bannerHero__skeletonImage}
+          style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            right: 0,
+            bottom: 0,
+            background:
+              'linear-gradient(90deg, #e5e7eb 25%, #f3f4f6 50%, #e5e7eb 75%)',
+            backgroundSize: '200% 100%',
+            animation: 'shimmer 1.5s infinite',
+          }}
+        />
+        <div
+          style={{
+            position: 'absolute',
+            bottom: '40px',
+            left: '40px',
+            display: 'flex',
+            flexDirection: 'column',
+            gap: '12px',
+          }}
+        >
+          <div
+            className={handles.bannerHero__skeletonTitle}
+            style={{
+              width: '300px',
+              height: '40px',
+              background: 'rgba(255,255,255,0.3)',
+              borderRadius: '8px',
+            }}
+          />
+          <div
+            className={handles.bannerHero__skeletonSubtitle}
+            style={{
+              width: '200px',
+              height: '24px',
+              background: 'rgba(255,255,255,0.2)',
+              borderRadius: '6px',
+            }}
+          />
+        </div>
+        <style>{`
+          @keyframes shimmer {
+            0% { background-position: 200% 0; }
+            100% { background-position: -200% 0; }
+          }
+        `}</style>
+      </div>
+    )
   }
 
   return (

@@ -88,9 +88,9 @@
   background-color: #364153;
   color: #ffffff;
   border: none;
-  border-radius: 0.4rem;
+  border-radius: 2rem;
   font-size: 0.85rem;
-  font-weight: 600;
+  font-weight: 400;
   cursor: pointer;
   transition: background-color 0.2s ease;
   margin-top: 0.25rem;
