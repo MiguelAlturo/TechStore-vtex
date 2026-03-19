@@ -1,0 +1,33 @@
+{
+  "vendor": "vugravity",
+  "name": "techstore",
+  "version": "0.1.0",
+  "title": "TechStore",
+  "description": "TechStore Theme",
+  "builders": {
+    "store": "0.x",
+    "react": "3.x",
+    "styles": "2.x"
+  },
+  "dependencies": {
+    "vtex.store": "2.x",
+    "vtex.flex-layout": "0.x",
+    "vtex.rich-text": "0.x",
+    "vtex.store-components": "3.x",
+    "vtex.slider-layout": "0.x",
+    "vtex.shelf": "1.x",
+    "vtex.product-summary": "2.x",
+    "vtex.css-handles": "0.x",
+    "vtex.tab-layout": "0.x",
+    "vtex.product-context": "0.x",
+    "vtex.list-context": "0.x",
+    "vtex.product-review-interfaces": "1.x",
+    "vtex.seller-selector": "0.x",
+    "vtex.device-detector": "0.x",
+    "vtex.add-to-cart-button": "0.x"
+  },
+  "peerDependencies": {
+    "vtex.reviews-and-ratings": "3.x"
+  },
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}

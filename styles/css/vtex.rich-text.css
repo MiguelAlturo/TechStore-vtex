@@ -1,0 +1,159 @@
+:global(.vtex-rich-text-0-x-container--section-title) {
+  width: 100% !important;
+  text-align: center !important;
+  max-width: 1360px;
+  margin: 0 auto;
+}
+
+:global(.vtex-rich-text-0-x-container--section-title)
+  :global(.vtex-rich-text-0-x-paragraph--section-title),
+:global(.vtex-rich-text-0-x-container--section-title)
+  :global(.vtex-rich-text-0-x-headingLevel2--section-title),
+:global(.vtex-rich-text-0-x-container--section-title)
+  :global(.vtex-rich-text-0-x-headingLevel3--section-title) {
+  text-align: center !important;
+}
+
+:global(.vtex-rich-text-0-x-container--why-description) {
+  width: 100% !important;
+  text-align: center !important;
+  max-width: 1360px;
+  margin: 0 auto;
+}
+
+:global(.vtex-rich-text-0-x-container--why-description)
+  :global(.vtex-rich-text-0-x-paragraph--why-description) {
+  text-align: center !important;
+}
+
+:global(.vtex-rich-text-0-x-paragraph--section-title) {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 2rem 0;
+  color: #111827;
+  font-family: inherit;
+  line-height: 1.3;
+}
+
+:global(.vtex-rich-text-0-x-headingLevel2--section-title) {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 2rem 0;
+  color: #111827;
+  font-family: inherit;
+  line-height: 1.3;
+}
+
+:global(.vtex-rich-text-0-x-headingLevel3--section-title) {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 2rem 0;
+  color: #111827;
+  font-family: inherit;
+  line-height: 1.3;
+}
+
+:global(.vtex-rich-text-0-x-paragraph--why-description) {
+  text-align: center;
+  font-size: 1rem;
+  color: #6b7280;
+  max-width: 700px;
+  margin: 0 auto 3rem auto;
+  line-height: 1.6;
+  font-family: 'Inter', sans-serif;
+}
+
+:global(.vtex-rich-text-0-x-paragraph--history-title) {
+  text-align: left;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 16px !important;
+  font-family: 'Inter', sans-serif;
+  line-height: 1.4;
+}
+
+:global(.vtex-rich-text-0-x-headingLevel2--history-title) {
+  text-align: left;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 16px !important;
+  font-family: 'Inter', sans-serif;
+  line-height: 1.4;
+}
+
+:global(.vtex-rich-text-0-x-paragraph--history-paragraph) {
+  text-align: left;
+  font-size: 0.95rem;
+  color: #4b5563;
+  line-height: 1.8;
+  margin-bottom: 12px !important;
+  font-family: 'Inter', sans-serif;
+}
+
+.why-choose-us {
+  text-align: center;
+  padding: 3rem 1rem;
+  background-color: #f8f9fa;
+  margin: 2rem 0;
+}
+
+:global(.vtex-rich-text-0-x-headingStyle--why-choose-us-title) {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+:global(.vtex-rich-text-0-x-paragraph--why-choose-us-text) {
+  font-size: 1.1rem;
+  color: #666;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.our-history {
+  padding: 3rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+:global(.vtex-rich-text-0-x-headingStyle--our-history-title) {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+  text-align: center;
+}
+
+:global(.vtex-rich-text-0-x-paragraph--our-history-text) {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.global-title {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+:global(.vtex-rich-text-0-x-headingStyle--global-title-heading) {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: white;
+}
+
+:global(.vtex-rich-text-0-x-paragraph--global-title-text) {
+  color: #ccc;
+}
+
+.footer {
+  text-align: center;
+  padding: 2rem;
+  background-color: #333;
+  color: white;
+  font-size: 0.9rem;
+}

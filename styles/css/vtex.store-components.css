@@ -1,0 +1,492 @@
+/* ============================================
+   TABS PRODUCTS STYLES
+   ============================================ */
+
+/* ===== TAB LIST ===== */
+:global(.vtex-tab-layout-0-x-listContainer--productsTabList) {
+  justify-content: center;
+  border-bottom: none;
+  margin-bottom: 30px;
+  gap: 12px;
+  list-style: none;
+  padding: 3px !important;
+  display: flex;
+  background: #ececf0;
+  border-radius: 50px;
+}
+
+:global(.vtex-tab-layout-0-x-listItem) {
+  font-size: 14px;
+  font-weight: 600;
+  color: #0a0a0a !important;
+  padding: 0 !important;
+  margin: 0;
+  border: none;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  list-style: none;
+  background: transparent;
+}
+
+/* Ocultar precios */
+:global(.vtex-product-summary-2-x-listPriceContainer),
+:global(.vtex-product-summary-2-x-price_listPriceContainer),
+:global(.vtex-product-summary-2-x-installmentContainer),
+:global(.vtex-product-summary-2-x-price_installmentContainer),
+:global(.vtex-product-summary-2-x-sellingPriceLabel),
+:global(.vtex-product-summary-2-x-price_sellingPriceLabel) {
+  display: none !important;
+}
+
+:global(.vtex-tab-layout-0-x-listItemActive) {
+  color: #0a0a0a !important;
+  font-weight: 700;
+  border-radius: 50px;
+  box-shadow: none !important;
+  border-bottom: none !important;
+}
+
+/* Rating alineado a la izquierda */
+:global(.vtex-reviews-and-ratings-3-x-summaryContainer),
+:global(.vtex-reviews-and-ratings-1-x-summaryContainer) {
+  text-align: left !important;
+  max-width: none !important;
+  margin: 0 !important;
+  justify-content: flex-start !important;
+  display: flex !important;
+  gap: 0.5rem !important;
+  align-items: center !important;
+}
+
+:global(.vtex-tab-layout-0-x-listItemActive):hover {
+  background: transparent !important;
+  color: #0a0a0a !important;
+}
+
+:global(.vtex-tab-layout-0-x-listItem):hover {
+  color: #0a0a0a !important;
+  background: #e0e0e0;
+}
+
+:global(.vtex-tab-layout-0-x-listItemActive) {
+  color: #0a0a0a;
+  background: transparent !important;
+  font-weight: 700;
+  border-radius: 50px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+:global(.vtex-tab-layout-0-x-listItemActive):hover {
+  background: transparent !important;
+  color: #0a0a0a;
+}
+
+:global(.vtex-tab-layout-0-x-listItem):hover {
+  color: #0a0a0a;
+  background: #e0e0e0;
+}
+
+:global(.vtex-tab-layout-0-x-listItemActive) :global(.vtex-button) {
+  background: #fff !important;
+  border: none !important;
+  color: #0a0a0a !important;
+  box-shadow: none !important;
+  border-radius: 30px !important;
+}
+
+/* ===== PRODUCT CARD ===== */
+:global(.vtex-product-summary-2-x-container--tabProduct) {
+  max-width: 280px;
+  margin: 0 auto;
+  padding: 20px 15px;
+  background: #fff;
+  border-radius: 8px;
+  transition: box-shadow 0.3s ease;
+}
+
+:global(.vtex-product-summary-2-x-container--tabProduct):hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Product Image */
+:global(.vtex-product-summary-2-x-imageNormal--tabProductImage) {
+  margin-bottom: 15px;
+  max-height: 200px;
+  overflow: hidden;
+}
+
+:global(.vtex-product-summary-2-x-imageNormal--tabProductImage)
+  :global(.vtex-product-summary-2-x-image) {
+  max-height: 200px;
+  object-fit: contain;
+}
+
+/* Product Name - UNA SOLA LÍNEA con puntos suspensivos */
+:global(.vtex-product-summary-2-x-productName--tabProductName),
+:global(.vtex-product-summary-2-x-brandName) {
+  overflow: hidden !important;
+  white-space: nowrap !important;
+  text-overflow: ellipsis !important;
+  max-width: 100% !important;
+  display: block !important;
+  text-align: left !important;
+  padding: 0 0 8px 16px !important;
+  font-size: 14px;
+  font-weight: 600;
+  color: #1a1a1a;
+  line-height: 1.4;
+}
+
+/* Prices - SOLO PRECIO ACTUAL */
+:global(.vtex-product-price-1-x-sellingPriceContainer) {
+  margin: 0 0 12px 16px;
+}
+
+/* Product Rating - ESTRELLAS */
+:global(.vtex-reviews-and-ratings-1-x-star) {
+  color: #ffb800;
+  font-size: 14px;
+  margin: 0 1px;
+}
+
+:global(.vtex-reviews-and-ratings-1-x-reviewRating--tabProductRating) {
+  margin: 0 0 8px 16px;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/* Rating Stars Custom */
+:global(.vtex-reviews-and-ratings-1-x-star--active),
+:global(.vtex-reviews-and-ratings-1-x-star--filled) {
+  fill: #ffb800 !important;
+  color: #ffb800 !important;
+  width: 16px !important;
+  height: 16px !important;
+}
+
+:global(.vtex-reviews-and-ratings-1-x-star--empty),
+:global(.vtex-reviews-and-ratings-1-x-star--inactive) {
+  fill: #e0e0e0 !important;
+  color: #e0e0e0 !important;
+  width: 16px !important;
+  height: 16px !important;
+}
+
+/* Botón transparente */
+:global(.vtex-button) {
+  background: transparent !important;
+  border: none !important;
+  align-items: center !important;
+  gap: 0.5rem !important;
+}
+
+/* Prices - SOLO PRECIO ACTUAL */
+:global(.vtex-product-price-1-x-sellingPriceContainer) {
+  margin: 0 16px 12px 16px;
+}
+
+:global(.vtex-product-price-1-x-sellingPrice) {
+  display: block;
+}
+
+:global(.vtex-product-price-1-x-sellingPriceValue) {
+  color: #1a1a1a;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+:global(.vtex-product-price-1-x-listPrice) {
+  display: none !important;
+}
+
+/* Botón Comprar - FONDO #101828 */
+:global(.vtex-product-summary-2-x-buyButtonContainer) {
+  margin: 0 0 16px 16px;
+}
+
+:global(.vtex-product-summary-2-x-buyButton) {
+  width: 100%;
+  background: #101828;
+  border: none;
+  border-radius: 8px;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 12px 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: background 0.2s ease;
+  cursor: pointer;
+}
+
+:global(.vtex-product-summary-2-x-buyButton):hover {
+  background: #2d3748;
+}
+
+:global(.vtex-button__label) {
+  text-transform: none !important;
+  color: inherit !important;
+}
+
+:global(.vtex-product-summary-2-x-buyButton) {
+  width: 100%;
+  background: #101828;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 12px 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: background 0.2s ease;
+  cursor: pointer;
+}
+
+:global(.vtex-product-summary-2-x-buyButton):hover {
+  background: #2d3748;
+}
+
+:global(.vtex-button__label) {
+  color: #0a0a0a !important;
+}
+
+/* ===== SLIDER ===== */
+:global(.vtex-slider-layout-0-x-container--productsSlider) {
+  padding: 20px 0;
+}
+
+:global(.vtex-slider-layout-0-x-sliderTrackContainer) {
+  gap: 0;
+}
+
+:global(.vtex-slider-layout-0-x-slide) {
+  padding: 0 10px;
+}
+
+/* Flechas de navegación */
+:global(.vtex-slider-layout-0-x-sliderLeft),
+:global(.vtex-slider-layout-0-x-sliderRight) {
+  color: #000;
+  background: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+:global(.vtex-slider-layout-0-x-sliderLeft):hover,
+:global(.vtex-slider-layout-0-x-sliderRight):hover {
+  background: #f5f5f5;
+}
+
+/* ===== TÍTULO DE SECCIÓN ===== */
+:global(.vtex-flex-layout-0-x-flexRowContent--sectionTitle) {
+  margin: 40px 0 20px;
+}
+
+:global(.vtex-rich-text-0-x-paragraph--sectionTitle) {
+  font-size: 32px;
+  font-weight: 600;
+  color: #1a1a1a;
+  text-align: center;
+}
+
+:global(.vtex-tab-layout-0-x-listItem) {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #666;
+  padding: 12px 0;
+  margin: 0;
+  border: none;
+  letter-spacing: 0.5px;
+  transition: all 0.2s ease;
+  list-style: none;
+}
+
+:global(.vtex-tab-layout-0-x-listItemActive) {
+  color: #000;
+  border-bottom: 3px solid #000;
+  font-weight: 600;
+}
+
+:global(.vtex-tab-layout-0-x-listItem):hover {
+  color: #000;
+}
+
+/* ===== PRODUCT CARD ===== */
+:global(.vtex-product-summary-2-x-container--tabProduct) {
+  max-width: 280px;
+  margin: 0 auto;
+  padding: 20px 15px;
+  background: #fff;
+  border-radius: 8px;
+  transition: box-shadow 0.3s ease;
+}
+
+:global(.vtex-product-summary-2-x-container--tabProduct):hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Product Image */
+:global(.vtex-product-summary-2-x-imageNormal--tabProductImage) {
+  margin-bottom: 15px;
+  max-height: 200px;
+  overflow: hidden;
+}
+
+:global(.vtex-product-summary-2-x-imageNormal--tabProductImage)
+  :global(.vtex-product-summary-2-x-image) {
+  max-height: 200px;
+  object-fit: contain;
+}
+
+/* Product Name */
+:global(.vtex-product-summary-2-x-productName) {
+  justify-content: flex-start;
+  padding: 0 0 8px 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: #1a1a1a;
+  text-align: left;
+}
+
+/* Product Rating */
+:global(.vtex-reviews-and-ratings-1-x-star) {
+  color: #ffb800;
+  font-size: 16px;
+}
+
+:global(.vtex-reviews-and-ratings-1-x-reviewRating) {
+  margin: 8px 0;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Prices Row */
+:global(.vtex-flex-layout-0-x-flexRowContent--productPrices) {
+  margin: 12px 0;
+}
+
+/* List Price (tachado) */
+:global(.vtex-product-price-1-x-listPrice) {
+  margin-right: 8px;
+  display: inline-block;
+}
+
+:global(.vtex-product-price-1-x-listPriceValue) {
+  color: #999;
+  font-size: 16px;
+  text-decoration: line-through;
+  font-weight: 400;
+}
+
+/* Selling Price (precio de oferta) */
+:global(.vtex-product-price-1-x-sellingPrice) {
+  display: inline-block;
+}
+
+:global(.vtex-product-price-1-x-sellingPriceValue) {
+  color: #b12704;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+/* add-to-cart-button estilos */
+:global(.vtex-add-to-cart-button-0-x-button) {
+  background: #101828 !important;
+  color: #fff !important;
+  border-radius: 10px !important;
+  width: 90% !important;
+  margin: 0 auto !important;
+  display: block !important;
+  text-align: center !important;
+}
+
+/* Botón Comprar */
+:global(.vtex-product-summary-2-x-buyButtonContainer) {
+  margin: 0 0 16px 16px;
+}
+
+:global(.vtex-product-summary-2-x-buyButton) {
+  width: 100%;
+  background: #101828;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 12px 20px;
+  letter-spacing: 0.5px;
+  transition: background 0.2s ease;
+  cursor: pointer;
+  text-transform: none !important;
+}
+
+:global(.vtex-product-summary-2-x-buyButton):hover {
+  background: #2d3748;
+}
+
+:global(.vtex-product-summary-2-x-buyButton) {
+  width: 100%;
+  background: #000;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 12px 0;
+  transition: background 0.2s ease;
+  cursor: pointer;
+}
+
+:global(.vtex-product-summary-2-x-buyButton):hover {
+  background: #333;
+}
+
+/* ===== SLIDER ===== */
+:global(.vtex-slider-layout-0-x-container--productsSlider) {
+  padding: 20px 0;
+}
+
+:global(.vtex-slider-layout-0-x-sliderTrackContainer) {
+  gap: 0;
+}
+
+:global(.vtex-slider-layout-0-x-slide) {
+  padding: 0 10px;
+}
+
+/* Flechas de navegación */
+:global(.vtex-slider-layout-0-x-sliderLeft),
+:global(.vtex-slider-layout-0-x-sliderRight) {
+  color: #000;
+  background: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+:global(.vtex-slider-layout-0-x-sliderLeft):hover,
+:global(.vtex-slider-layout-0-x-sliderRight):hover {
+  background: #f5f5f5;
+}
+
+/* ===== TÍTULO DE SECCIÓN ===== */
+:global(.vtex-flex-layout-0-x-flexRowContent--sectionTitle) {
+  margin: 40px 0 20px;
+}
+
+:global(.vtex-rich-text-0-x-paragraph--sectionTitle) {
+  font-size: 32px;
+  font-weight: 600;
+  color: #1a1a1a;
+  text-align: center;
+}

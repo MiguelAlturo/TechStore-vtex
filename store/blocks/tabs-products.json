@@ -1,0 +1,207 @@
+{
+  "store.custom#product-tabs": {
+    "blocks": ["flex-layout.row#section-title", "tab-layout#products"]
+  },
+
+  "flex-layout.row#section-title": {
+    "children": ["rich-text#section-title"],
+    "props": {
+      "blockClass": "sectionTitle",
+      "fullWidth": true,
+      "horizontalAlign": "center"
+    }
+  },
+
+  "rich-text#section-title": {
+    "props": {
+      "text": "Productos Destacados",
+      "blockClass": "sectionTitle"
+    }
+  },
+
+  "tab-layout#products": {
+    "children": ["tab-list#products", "tab-content#products"],
+    "props": {
+      "blockClass": "productsTab"
+    }
+  },
+
+  "tab-list#products": {
+    "children": [
+      "tab-list.item#all",
+      "tab-list.item#audio",
+      "tab-list.item#wearables",
+      "tab-list.item#computers"
+    ],
+    "props": {
+      "blockClass": "productsTabList"
+    }
+  },
+
+  "tab-list.item#all": {
+    "props": {
+      "tabId": "all",
+      "label": "Todos",
+      "defaultActiveTab": true
+    }
+  },
+
+  "tab-list.item#audio": {
+    "props": {
+      "tabId": "audio",
+      "label": "Audio"
+    }
+  },
+
+  "tab-list.item#wearables": {
+    "props": {
+      "tabId": "wearables",
+      "label": "Wearables"
+    }
+  },
+
+  "tab-list.item#computers": {
+    "props": {
+      "tabId": "computers",
+      "label": "Computadoras"
+    }
+  },
+
+  "tab-content#products": {
+    "children": [
+      "tab-content.item#all",
+      "tab-content.item#audio",
+      "tab-content.item#wearables",
+      "tab-content.item#computers"
+    ],
+    "props": {
+      "blockClass": "productsTabContent"
+    }
+  },
+
+  "tab-content.item#all": {
+    "props": {
+      "tabId": "all"
+    },
+    "children": ["list-context.product-list#all"]
+  },
+
+  "tab-content.item#audio": {
+    "props": {
+      "tabId": "audio"
+    },
+    "children": ["list-context.product-list#audio"]
+  },
+
+  "tab-content.item#wearables": {
+    "props": {
+      "tabId": "wearables"
+    },
+    "children": ["list-context.product-list#wearables"]
+  },
+
+  "tab-content.item#computers": {
+    "props": {
+      "tabId": "computers"
+    },
+    "children": ["list-context.product-list#computers"]
+  },
+
+  "list-context.product-list#all": {
+    "props": {
+      "maxItems": 4
+    },
+    "blocks": ["product-summary.shelf#tab-product"],
+    "children": ["slider-layout#products"]
+  },
+
+  "list-context.product-list#audio": {
+    "props": {
+      "collection": "123",
+      "maxItems": 4
+    },
+    "blocks": ["product-summary.shelf#tab-product"],
+    "children": ["slider-layout#products"]
+  },
+
+  "list-context.product-list#wearables": {
+    "props": {
+      "collection": "124",
+      "maxItems": 4
+    },
+    "blocks": ["product-summary.shelf#tab-product"],
+    "children": ["slider-layout#products"]
+  },
+
+  "list-context.product-list#computers": {
+    "props": {
+      "collection": "125",
+      "maxItems": 4
+    },
+    "blocks": ["product-summary.shelf#tab-product"],
+    "children": ["slider-layout#products"]
+  },
+
+  "product-summary.shelf#tab-product": {
+    "children": [
+      "discount-flag",
+      "product-summary-image#tab-product",
+      "product-summary-name#tab-product",
+      "product-rating-summary#tab-product",
+      "flex-layout.row#product-prices-tab",
+      "add-to-cart-button#tab-product"
+    ],
+    "props": {
+      "blockClass": "tabProduct"
+    }
+  },
+
+  "product-summary-image#tab-product": {
+    "props": {
+      "displayMode": "product-summary",
+      "blockClass": "tabProductImage",
+      "showBadge": false
+    }
+  },
+
+  "product-summary-name#tab-product": {
+    "props": {
+      "blockClass": "tabProductName",
+      "tag": "h3"
+    }
+  },
+
+  "product-rating-summary#tab-product": {
+    "props": {
+      "blockClass": "tabProductRating"
+    }
+  },
+
+  "flex-layout.row#product-prices-tab": {
+    "children": ["product-summary-price"],
+    "props": {
+      "blockClass": "productPrices",
+      "colGap": 2,
+      "preventHorizontalStretch": true,
+      "horizontalAlign": "left"
+    }
+  },
+
+  "slider-layout#products": {
+    "props": {
+      "itemsPerPage": 4,
+      "showPaginationDots": "never",
+      "showNavigationArrows": "always",
+      "gap": "ph4",
+      "fullWidth": true,
+      "blockClass": "productsSlider"
+    }
+  },
+
+  "add-to-cart-button#tab-product": {
+    "props": {
+      "text": "Comprar",
+      "blockClass": "tabProductButton"
+    }
+  }
+}

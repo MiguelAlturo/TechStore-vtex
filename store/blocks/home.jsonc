@@ -1,0 +1,193 @@
+{
+  "store.home": {
+    "blocks": [
+      "banner-hero",
+      "flex-layout.row#section-title",
+      "tab-layout#products",
+      "flex-layout.row#promo-banners",
+      "list-context.product-list#featured",
+      "flex-layout.row#why-choose-us",
+      "country-carousel"
+    ]
+  },
+
+  "banner-hero": {
+    "props": {
+      "imageUrl": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=1400&q=80",
+      "headline": "Tecnología del Futuro",
+      "subhead": "Descubre las últimas innovaciones en electrónica y gadgets",
+      "textPosition": "bottom-left",
+      "textColor": "#FFFFFF"
+    }
+  },
+
+  "rich-text#products-title": {
+    "props": {
+      "text": "Nuestros Productos",
+      "blockClass": "section-title"
+    }
+  },
+  // 🔥 BANNERS
+  "flex-layout.row#promo-banners": {
+    "props": {
+      "fullWidth": true,
+      "blockClass": "promo-row",
+      "colGap": 15
+    },
+    "children": ["flex-layout.col#promo1", "flex-layout.col#promo2"]
+  },
+
+  "flex-layout.col#promo1": {
+    "props": { "width": "50%", "blockClass": "promo-col" },
+    "children": ["info-card#promo1"]
+  },
+
+  "info-card#promo1": {
+    "props": {
+      "isFullModeStyle": true,
+      "imageUrl": "https://images.unsplash.com/photo-1498049860654-af1a5c566bac?w=800&q=80",
+      "headline": "Colección Premium",
+      "subhead": "Alta gama",
+      "blockClass": "promo-card",
+      "imageHeight": 400,
+      "showCallToActionButton": false
+    }
+  },
+
+  "flex-layout.col#promo2": {
+    "props": { "width": "50%", "blockClass": "promo-col" },
+    "children": ["info-card#promo2"]
+  },
+
+  "info-card#promo2": {
+    "props": {
+      "isFullModeStyle": true,
+      "imageUrl": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&q=80",
+      "headline": "Nuevos Productos",
+      "subhead": "Tendencias",
+      "blockClass": "promo-card",
+      "imageHeight": 400,
+      "showCallToActionButton": false
+    }
+  },
+
+  "list-context.product-list#featured": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#featured"],
+    "props": {
+      "collection": "13",
+      "maxItems": 8,
+      "hideUnavailableItems": true
+    }
+  },
+
+  "slider-layout#featured": {
+    "props": {
+      "itemsPerPage": { "desktop": 4, "tablet": 2, "mobile": 1 },
+      "infinite": true,
+      "showNavigationArrows": "always"
+    }
+  },
+
+  // 🔥 POR QUÉ ELEGIRNOS
+  "flex-layout.row#why-choose-us": {
+    "props": {
+      "fullWidth": true,
+      "blockClass": "why-choose-us-section"
+    },
+    "children": ["flex-layout.col#why-choose-us-content"]
+  },
+
+  "flex-layout.col#why-choose-us-content": {
+    "props": {
+      "width": "100%",
+      "blockClass": "why-choose-us-col"
+    },
+    "children": [
+      "flex-layout.row#our-history-title",
+      "flex-layout.row#our-history"
+    ]
+  },
+
+  "flex-layout.row#our-history-title": {
+    "props": {
+      "blockClass": "our-history-row"
+    },
+    "children": ["flex-layout.col#our-history-title"]
+  },
+  "flex-layout.col#our-history-title": {
+    "props": {
+      "width": "100%",
+      "blockClass": "our-history-card-title"
+    },
+    "children": ["rich-text#why-title", "rich-text#why-description"]
+  },
+
+  "rich-text#why-title": {
+    "props": {
+      "text": "¿Por Qué Elegirnos?",
+      "blockClass": "section-title"
+    }
+  },
+
+  "rich-text#why-description": {
+    "props": {
+      "text": "Somos líderes en tecnología y innovación, comprometidos con ofrecer la mejor experiencia de compra",
+      "blockClass": "why-description"
+    }
+  },
+
+  "flex-layout.row#our-history": {
+    "props": {
+      "blockClass": "our-history-row"
+    },
+    "children": ["flex-layout.col#our-history-content"]
+  },
+
+  "flex-layout.col#our-history-content": {
+    "props": {
+      "width": "100%",
+      "blockClass": "our-history-card"
+    },
+    "children": [
+      "rich-text#history-title",
+      "rich-text#history-text1",
+      "rich-text#history-text2",
+      "rich-text#history-text3"
+    ]
+  },
+
+  "rich-text#history-title": {
+    "props": {
+      "text": "Nuestra Historia",
+      "blockClass": "history-title"
+    }
+  },
+
+  "rich-text#history-text1": {
+    "props": {
+      "text": "Desde 2010, nos hemos dedicado a traer las últimas innovaciones tecnológicas a nuestros clientes. Con más de una década de experiencia, hemos construido una reputación basada en la confianza, calidad y servicio excepcional.",
+      "blockClass": "history-paragraph"
+    }
+  },
+
+  "rich-text#history-text2": {
+    "props": {
+      "text": "Trabajamos directamente con los principales fabricantes del mundo para garantizar que nuestros productos no solo cumplan, sino que superen las expectativas. Cada producto en nuestro catálogo ha sido cuidadosamente seleccionado por nuestro equipo de expertos.",
+      "blockClass": "history-paragraph"
+    }
+  },
+
+  "rich-text#history-text3": {
+    "props": {
+      "text": "Creemos que la tecnología debe ser accesible para todos, por eso ofrecemos opciones de financiación flexibles y un servicio al cliente que está siempre disponible para ayudarte a encontrar el producto perfecto para tus necesidades.",
+      "blockClass": "history-paragraph"
+    }
+  },
+
+  "country-carousel": {
+    "props": {
+      "blockClass": "custom-carousel"
+    }
+  }
+}

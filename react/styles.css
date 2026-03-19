@@ -1,0 +1,171 @@
+/* 🔥 CONTENEDOR GENERAL */
+.container {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* 🔥 CAROUSEL WRAPPER */
+.carousel {
+  display: flex;
+  gap: 20px;
+  overflow: hidden;
+  position: relative;
+}
+
+/* 🔥 SLIDE (CARD) */
+.slide {
+  min-width: 280px;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 16px;
+  cursor: pointer;
+
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+
+  transition: all 0.3s ease;
+}
+
+.slide:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* 🔥 BANDERA */
+.flag {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* 🔥 TEXTO */
+.countryName {
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 12px;
+  color: #1a1a1a;
+}
+
+.capital {
+  font-size: 14px;
+  color: #777;
+  margin-top: 4px;
+}
+
+/* 🔥 MODAL OVERLAY */
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(15, 52, 96, 0.6);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  animation: fadeIn 0.3s ease;
+}
+
+/* 🔥 MODAL */
+.modal {
+  background: #ffffff;
+  padding: 28px;
+  border-radius: 12px;
+  width: 360px;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+
+  animation: scaleIn 0.25s ease;
+}
+
+/* 🔥 INPUTS */
+.input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 14px;
+
+  border: 1px solid #ddd;
+  border-radius: 8px;
+
+  font-size: 14px;
+}
+
+/* 🔥 BOTÓN */
+.button {
+  width: 100%;
+  background-color: #0f3460;
+  color: #ffffff;
+
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+
+  font-weight: 600;
+  cursor: pointer;
+
+  transition: background 0.3s;
+}
+
+.button:hover {
+  background-color: #16213e;
+}
+
+/* 🔥 STATUS */
+.status {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* 🔥 ANIMACIONES */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+/* TITULOS */
+.section-title {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 600;
+  margin: 30px 0 10px;
+}
+
+/* HERO */
+.hero {
+  margin-bottom: 20px;
+}
+
+/* PROMOS */
+.promo-row {
+  margin: 40px auto;
+  max-width: 1200px;
+  gap: 20px;
+}
+
+.promo-card {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* ESPACIADO GENERAL */
+.vtex-slider-layout-0-x-sliderLayoutContainer {
+  margin-bottom: 30px;
+}

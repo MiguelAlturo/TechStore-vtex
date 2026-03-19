@@ -1,0 +1,11 @@
+{
+  "banner-hero": {
+    "component": "BannerHero"
+  },
+  "discount-flag": {
+    "component": "DiscountFlag"
+  },
+  "country-carousel": {
+    "component": "CountryCarousel"
+  }
+}

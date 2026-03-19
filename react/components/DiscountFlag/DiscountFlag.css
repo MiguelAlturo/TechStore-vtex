@@ -1,0 +1,8 @@
+.discount-flag-container {
+  transition: all 0.3s ease;
+  transform-origin: left center;
+}
+
+:global(.vtex-product-summary-2-x-container):hover .discount-flag-container {
+  transform: scale(1.05);
+}
