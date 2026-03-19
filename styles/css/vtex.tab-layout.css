@@ -44,7 +44,7 @@
   background-color: transparent !important;
 }
 
-:global(.vtex-tab-layout-0-x-listItemActive  ) :global(.vtex-button) {
+:global(.vtex-tab-layout-0-x-listItemActive) :global(.vtex-button) {
   background-color: #fff !important;
 }
 
@@ -75,4 +75,44 @@
 
 :global(.vtex-tab-layout-0-x-contentContainer) {
   padding: 0 !important;
+}
+
+@media (max-width: 768px) {
+  :global(.vtex-tab-layout-0-x-container) {
+    margin: 30px auto !important;
+    overflow: hidden !important;
+  }
+
+  :global(.vtex-tab-layout-0-x-listContainer) {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    overflow-x: auto !important;
+    justify-content: flex-start !important;
+    gap: 8px !important;
+    padding: 10px 15px !important;
+    margin: 0 !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    scrollbar-width: none !important;
+    -ms-overflow-style: none !important;
+    -webkit-overflow-scrolling: touch !important;
+    scroll-snap-type: x mandatory !important;
+  }
+
+  :global(.vtex-tab-layout-0-x-listItem) {
+    flex-shrink: 0 !important;
+    scroll-snap-align: start !important;
+  }
+
+  :global(.vtex-tab-layout-0-x-listItemChildren) {
+    padding: 10px 18px !important;
+    font-size: 13px !important;
+    border-radius: 20px !important;
+  }
+
+  :global(.vtex-tab-layout-0-x-listItemChildrenActive) {
+    padding: 10px 18px !important;
+    font-size: 13px !important;
+    border-radius: 20px !important;
+  }
 }

@@ -83,9 +83,9 @@
 
 /* Botón */
 .button {
-  width: 100%;
-  padding: 0.75rem 1.25rem;
-  background-color: #0f3460;
+  width: auto;
+  padding: 0.75rem 1.5rem;
+  background-color: #364153;
   color: #ffffff;
   border: none;
   border-radius: 0.4rem;
