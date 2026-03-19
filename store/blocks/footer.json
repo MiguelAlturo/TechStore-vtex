@@ -1,0 +1,183 @@
+{
+  "footer": {
+    "blocks": ["footer-layout.desktop"]
+  },
+
+  "footer-layout.desktop": {
+    "children": ["flex-layout.row#footer-content"]
+  },
+
+  "flex-layout.row#footer-content": {
+    "props": {
+      "blockClass": "footer-main",
+      "fullWidth": true
+    },
+    "children": ["flex-layout.col#footer-links"]
+  },
+
+  "flex-layout.col#footer-links": {
+    "props": {
+      "blockClass": "footer-links-container",
+      "width": "100%"
+    },
+    "children": [
+      "flex-layout.row#footer-row-1",
+      "flex-layout.row#footer-row-2",
+      "flex-layout.row#footer-row-3"
+    ]
+  },
+
+  "flex-layout.row#footer-row-1": {
+    "props": {
+      "blockClass": "footer-links-row",
+      "horizontalAlign": "center"
+    },
+    "children": [
+      "flex-layout.col#footer-col-comprar",
+      "flex-layout.col#footer-col-ayuda",
+      "flex-layout.col#footer-col-empresa"
+    ]
+  },
+
+  "flex-layout.col#footer-col-comprar": {
+    "props": {
+      "width": "25%"
+    },
+    "children": [
+      "rich-text#footer-comprar-title",
+      "rich-text#footer-productos",
+      "rich-text#footer-ofertas",
+      "rich-text#footer-nuevos"
+    ]
+  },
+
+  "rich-text#footer-comprar-title": {
+    "props": {
+      "text": "**Comprar**",
+      "blockClass": "footer-menu-title"
+    }
+  },
+
+  "rich-text#footer-productos": {
+    "props": {
+      "text": "[Productos](/productos)",
+      "blockClass": "footer-link"
+    }
+  },
+
+  "rich-text#footer-ofertas": {
+    "props": {
+      "text": "[Ofertas](/ofertas)",
+      "blockClass": "footer-link"
+    }
+  },
+
+  "rich-text#footer-nuevos": {
+    "props": {
+      "text": "[Nuevos](/nuevos-productos)",
+      "blockClass": "footer-link"
+    }
+  },
+
+  "flex-layout.col#footer-col-ayuda": {
+    "props": {
+      "width": "25%"
+    },
+    "children": [
+      "rich-text#footer-ayuda-title",
+      "rich-text#footer-envios",
+      "rich-text#footer-devoluciones",
+      "rich-text#footer-faq"
+    ]
+  },
+
+  "rich-text#footer-ayuda-title": {
+    "props": {
+      "text": "**Ayuda**",
+      "blockClass": "footer-menu-title"
+    }
+  },
+
+  "rich-text#footer-envios": {
+    "props": {
+      "text": "[Envíos](/envios)",
+      "blockClass": "footer-link"
+    }
+  },
+
+  "rich-text#footer-devoluciones": {
+    "props": {
+      "text": "[Devoluciones](/devoluciones)",
+      "blockClass": "footer-link"
+    }
+  },
+
+  "rich-text#footer-faq": {
+    "props": {
+      "text": "[FAQ](/faq)",
+      "blockClass": "footer-link"
+    }
+  },
+
+  "flex-layout.col#footer-col-empresa": {
+    "props": {
+      "width": "25%"
+    },
+    "children": [
+      "rich-text#footer-empresa-title",
+      "rich-text#footer-nosotros",
+      "rich-text#footer-tiendas",
+      "rich-text#footer-contacto"
+    ]
+  },
+
+  "rich-text#footer-empresa-title": {
+    "props": {
+      "text": "**Empresa**",
+      "blockClass": "footer-menu-title"
+    }
+  },
+
+  "rich-text#footer-nosotros": {
+    "props": {
+      "text": "[Sobre nosotros](/sobre-nosotros)",
+      "blockClass": "footer-link"
+    }
+  },
+
+  "rich-text#footer-tiendas": {
+    "props": {
+      "text": "[Tiendas](/tiendas)",
+      "blockClass": "footer-link"
+    }
+  },
+
+  "rich-text#footer-contacto": {
+    "props": {
+      "text": "[Contacto](/contacto)",
+      "blockClass": "footer-link"
+    }
+  },
+
+  "flex-layout.row#footer-row-2": {
+    "props": {
+      "blockClass": "footer-divider"
+    }
+  },
+
+  "flex-layout.row#footer-row-3": {
+    "props": {
+      "blockClass": "footer-copyright-row",
+      "horizontalAlign": "center"
+    },
+    "children": ["rich-text#footer-copyright"]
+  },
+
+  "rich-text#footer-copyright": {
+    "props": {
+      "text": "© 2026 TechStore. Todos los derechos reservados.",
+      "textAlignment": "CENTER",
+      "blockClass": "footer-copyright"
+    }
+  }
+}

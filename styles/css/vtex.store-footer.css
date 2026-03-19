@@ -1,0 +1,112 @@
+/* ============================================
+   FOOTER STYLES
+   ============================================ */
+
+:global(.vtex-flex-layout-0-x-flexRowContent--footer-main) {
+  background-color: #101828;
+  padding: 40px 20px 20px;
+}
+
+:global(.vtex-flex-layout-0-x-flexCol--footer-links-container) {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100% !important;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--footer-links-row) {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  margin-bottom: 40px;
+}
+
+:global(.vtex-flex-layout-0-x-flexCol--footer-col-comprar),
+:global(.vtex-flex-layout-0-x-flexCol--footer-col-ayuda),
+:global(.vtex-flex-layout-0-x-flexCol--footer-col-empresa) {
+  width: 200px !important;
+  text-align: left;
+}
+
+:global(.vtex-rich-text-0-x-paragraph--footer-menu-title) {
+  font-size: 16px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 16px !important;
+  text-align: left;
+}
+
+:global(.vtex-rich-text-0-x-headingLevel2--footer-menu-title) {
+  font-size: 16px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 16px !important;
+  text-align: left;
+}
+
+:global(.vtex-link) {
+  display: block;
+  font-size: 14px;
+  color: #ffffff;
+  text-decoration: none;
+  margin-bottom: 10px;
+  transition: color 0.2s ease;
+  text-align: left;
+}
+
+:global(.vtex-rich-text-0-x-link--footer-link) {
+  display: block;
+  font-size: 14px;
+  color: #ffffff;
+  text-decoration: none;
+  margin-bottom: 10px;
+  transition: color 0.2s ease;
+  text-align: left;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--footer-divider) {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  margin: 20px 0;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--footer-copyright-row) {
+  text-align: center;
+  padding-top: 10px;
+}
+
+:global(.vtex-rich-text-0-x-paragraph--footer-copyright) {
+  font-size: 13px;
+  color: #ffffff;
+  text-align: center;
+  margin: 0 auto !important;
+}
+
+:global(.vtex-rich-text-0-x-wrapper--footer-copyright) {
+  margin: 0 auto !important;
+}
+
+@media (max-width: 768px) {
+  :global(.vtex-flex-layout-0-x-flexRowContent--footer-links-row) {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  :global(.vtex-flex-layout-0-x-flexCol--footer-col-comprar),
+  :global(.vtex-flex-layout-0-x-flexCol--footer-col-ayuda),
+  :global(.vtex-flex-layout-0-x-flexCol--footer-col-empresa) {
+    width: 100% !important;
+    text-align: center;
+  }
+
+  :global(.vtex-rich-text-0-x-paragraph--footer-menu-title) {
+    text-align: center;
+  }
+
+  :global(.vtex-link) {
+    text-align: center;
+  }
+
+  :global(.vtex-rich-text-0-x-link--footer-link) {
+    text-align: center;
+  }
+}

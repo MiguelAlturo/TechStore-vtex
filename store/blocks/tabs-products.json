@@ -4,6 +4,7 @@
   },
 
   "flex-layout.row#section-title": {
+    "title": "Título Nuestros Productos",
     "children": ["rich-text#section-title"],
     "props": {
       "blockClass": "sectionTitle",
@@ -13,13 +14,16 @@
   },
 
   "rich-text#section-title": {
+    "title": "Texto Título Productos",
     "props": {
-      "text": "Productos Destacados",
-      "blockClass": "sectionTitle"
+      "text": "Nuestros Productos",
+      "blockClass": "sectionTitle",
+      "textAlignment": "CENTER"
     }
   },
 
   "tab-layout#products": {
+    "title": "Layout de Tabs de Productos",
     "children": ["tab-list#products", "tab-content#products"],
     "props": {
       "blockClass": "productsTab"
@@ -27,6 +31,7 @@
   },
 
   "tab-list#products": {
+    "title": "Lista de Tabs",
     "children": [
       "tab-list.item#all",
       "tab-list.item#audio",
@@ -39,6 +44,7 @@
   },
 
   "tab-list.item#all": {
+    "title": "Tab Todos",
     "props": {
       "tabId": "all",
       "label": "Todos",
@@ -47,6 +53,7 @@
   },
 
   "tab-list.item#audio": {
+    "title": "Tab Audio",
     "props": {
       "tabId": "audio",
       "label": "Audio"
@@ -54,6 +61,7 @@
   },
 
   "tab-list.item#wearables": {
+    "title": "Tab Wearables",
     "props": {
       "tabId": "wearables",
       "label": "Wearables"
@@ -61,6 +69,7 @@
   },
 
   "tab-list.item#computers": {
+    "title": "Tab Computadoras",
     "props": {
       "tabId": "computers",
       "label": "Computadoras"
@@ -68,6 +77,7 @@
   },
 
   "tab-content#products": {
+    "title": "Contenido de Tabs",
     "children": [
       "tab-content.item#all",
       "tab-content.item#audio",
@@ -80,6 +90,7 @@
   },
 
   "tab-content.item#all": {
+    "title": "Contenido Tab Todos",
     "props": {
       "tabId": "all"
     },
@@ -87,6 +98,7 @@
   },
 
   "tab-content.item#audio": {
+    "title": "Contenido Tab Audio",
     "props": {
       "tabId": "audio"
     },
@@ -94,6 +106,7 @@
   },
 
   "tab-content.item#wearables": {
+    "title": "Contenido Tab Wearables",
     "props": {
       "tabId": "wearables"
     },
@@ -101,6 +114,7 @@
   },
 
   "tab-content.item#computers": {
+    "title": "Contenido Tab Computadoras",
     "props": {
       "tabId": "computers"
     },
@@ -108,6 +122,7 @@
   },
 
   "list-context.product-list#all": {
+    "title": "Lista Productos Todos",
     "props": {
       "maxItems": 4
     },
@@ -116,6 +131,7 @@
   },
 
   "list-context.product-list#audio": {
+    "title": "Lista Productos Audio",
     "props": {
       "collection": "123",
       "maxItems": 4
@@ -125,6 +141,7 @@
   },
 
   "list-context.product-list#wearables": {
+    "title": "Lista Productos Wearables",
     "props": {
       "collection": "124",
       "maxItems": 4
@@ -134,6 +151,7 @@
   },
 
   "list-context.product-list#computers": {
+    "title": "Lista Productos Computadoras",
     "props": {
       "collection": "125",
       "maxItems": 4
@@ -143,6 +161,7 @@
   },
 
   "product-summary.shelf#tab-product": {
+    "title": "Tarjeta de Producto Tabs",
     "children": [
       "discount-flag",
       "product-summary-image#tab-product",
@@ -157,6 +176,7 @@
   },
 
   "product-summary-image#tab-product": {
+    "title": "Imagen Producto Tabs",
     "props": {
       "displayMode": "product-summary",
       "blockClass": "tabProductImage",
@@ -165,6 +185,7 @@
   },
 
   "product-summary-name#tab-product": {
+    "title": "Nombre Producto Tabs",
     "props": {
       "blockClass": "tabProductName",
       "tag": "h3"
@@ -172,12 +193,14 @@
   },
 
   "product-rating-summary#tab-product": {
+    "title": "Calificación Producto Tabs",
     "props": {
       "blockClass": "tabProductRating"
     }
   },
 
   "flex-layout.row#product-prices-tab": {
+    "title": "Precio Producto Tabs",
     "children": ["product-summary-price"],
     "props": {
       "blockClass": "productPrices",
@@ -188,6 +211,7 @@
   },
 
   "slider-layout#products": {
+    "title": "Slider de Productos Tabs",
     "props": {
       "itemsPerPage": 4,
       "showPaginationDots": "never",
@@ -199,9 +223,10 @@
   },
 
   "add-to-cart-button#tab-product": {
+    "title": "Botón Comprar Tabs",
     "props": {
       "text": "Comprar",
-      "blockClass": "tabProductButton"
+      "blockClass": "buyButton"
     }
   }
 }

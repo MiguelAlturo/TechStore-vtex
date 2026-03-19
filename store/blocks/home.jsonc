@@ -6,12 +6,15 @@
       "tab-layout#products",
       "flex-layout.row#promo-banners",
       "list-context.product-list#featured",
+      "flex-layout.row#ofertas-title",
+      "list-context.product-list#ofertas",
       "flex-layout.row#why-choose-us",
       "country-carousel"
     ]
   },
 
   "banner-hero": {
+    "title": "Banner Principal Hero",
     "props": {
       "imageUrl": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=1400&q=80",
       "headline": "Tecnología del Futuro",
@@ -22,13 +25,15 @@
   },
 
   "rich-text#products-title": {
+    "title": "Título Nuestros Productos",
     "props": {
       "text": "Nuestros Productos",
       "blockClass": "section-title"
     }
   },
-  // 🔥 BANNERS
+
   "flex-layout.row#promo-banners": {
+    "title": "Banners Promocionales",
     "props": {
       "fullWidth": true,
       "blockClass": "promo-row",
@@ -38,11 +43,13 @@
   },
 
   "flex-layout.col#promo1": {
+    "title": "Banner Promo 1",
     "props": { "width": "50%", "blockClass": "promo-col" },
     "children": ["info-card#promo1"]
   },
 
   "info-card#promo1": {
+    "title": "Tarjeta Promo 1",
     "props": {
       "isFullModeStyle": true,
       "imageUrl": "https://images.unsplash.com/photo-1498049860654-af1a5c566bac?w=800&q=80",
@@ -55,11 +62,13 @@
   },
 
   "flex-layout.col#promo2": {
+    "title": "Banner Promo 2",
     "props": { "width": "50%", "blockClass": "promo-col" },
     "children": ["info-card#promo2"]
   },
 
   "info-card#promo2": {
+    "title": "Tarjeta Promo 2",
     "props": {
       "isFullModeStyle": true,
       "imageUrl": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&q=80",
@@ -72,6 +81,7 @@
   },
 
   "list-context.product-list#featured": {
+    "title": "Vitrina Productos Destacados",
     "blocks": ["product-summary.shelf"],
     "children": ["slider-layout#featured"],
     "props": {
@@ -81,7 +91,26 @@
     }
   },
 
+  "flex-layout.row#featured-title": {
+    "title": "Título Productos Destacados",
+    "props": {
+      "blockClass": "sectionTitle",
+      "fullWidth": true
+    },
+    "children": ["rich-text#featured-title"]
+  },
+
+  "rich-text#featured-title": {
+    "title": "Texto Título Destacados",
+    "props": {
+      "text": "Productos Destacados",
+      "blockClass": "sectionTitle",
+      "textAlignment": "CENTER"
+    }
+  },
+
   "slider-layout#featured": {
+    "title": "Slider Productos Destacados",
     "props": {
       "itemsPerPage": { "desktop": 4, "tablet": 2, "mobile": 1 },
       "infinite": true,
@@ -89,8 +118,103 @@
     }
   },
 
-  // 🔥 POR QUÉ ELEGIRNOS
+  "flex-layout.row#ofertas-title": {
+    "title": "Título Ofertas Especiales",
+    "props": {
+      "fullWidth": true
+    },
+    "children": ["rich-text#ofertas-title"]
+  },
+
+  "rich-text#ofertas-title": {
+    "title": "Texto Título Ofertas",
+    "props": {
+      "text": "Ofertas Especiales",
+      "blockClass": "ofertas-title",
+      "textAlignment": "LEFT"
+    }
+  },
+
+  "list-context.product-list#ofertas": {
+    "title": "Vitrina Ofertas Especiales",
+    "blocks": ["product-summary.shelf#ofertas"],
+    "children": ["slider-layout#ofertas"],
+    "props": {
+      "collection": "146",
+      "maxItems": 8,
+      "hideUnavailableItems": true
+    }
+  },
+
+  "product-summary.shelf#ofertas": {
+    "title": "Tarjeta Producto Oferta",
+    "children": [
+      "discount-flag",
+      "product-summary-image#ofertas",
+      "product-summary-name#ofertas",
+      "product-rating-summary#ofertas",
+      "flex-layout.row#product-prices-ofertas",
+      "add-to-cart-button#ofertas"
+    ],
+    "props": {
+      "blockClass": "tabProduct"
+    }
+  },
+
+  "product-summary-image#ofertas": {
+    "title": "Imagen Producto Oferta",
+    "props": {
+      "displayMode": "product-summary",
+      "blockClass": "tabProductImage",
+      "showBadge": false
+    }
+  },
+
+  "product-summary-name#ofertas": {
+    "title": "Nombre Producto Oferta",
+    "props": {
+      "blockClass": "tabProductName",
+      "tag": "h3"
+    }
+  },
+
+  "product-rating-summary#ofertas": {
+    "title": "Calificación Producto Oferta",
+    "props": {
+      "blockClass": "tabProductRating"
+    }
+  },
+
+  "flex-layout.row#product-prices-ofertas": {
+    "title": "Precio Producto Oferta",
+    "children": ["product-summary-price"],
+    "props": {
+      "blockClass": "productPrices",
+      "colGap": 2,
+      "preventHorizontalStretch": true,
+      "horizontalAlign": "left"
+    }
+  },
+
+  "add-to-cart-button#ofertas": {
+    "title": "Botón Comprar Oferta",
+    "props": {
+      "text": "Comprar",
+      "blockClass": "buyButton"
+    }
+  },
+
+  "slider-layout#ofertas": {
+    "title": "Slider Ofertas",
+    "props": {
+      "itemsPerPage": { "desktop": 4, "tablet": 2, "mobile": 1 },
+      "infinite": true,
+      "showNavigationArrows": "always"
+    }
+  },
+
   "flex-layout.row#why-choose-us": {
+    "title": "Sección Por Qué Elegirnos",
     "props": {
       "fullWidth": true,
       "blockClass": "why-choose-us-section"
@@ -99,6 +223,7 @@
   },
 
   "flex-layout.col#why-choose-us-content": {
+    "title": "Contenido Por Qué Elegirnos",
     "props": {
       "width": "100%",
       "blockClass": "why-choose-us-col"
@@ -110,12 +235,15 @@
   },
 
   "flex-layout.row#our-history-title": {
+    "title": "Título Principal Por Qué Elegirnos",
     "props": {
       "blockClass": "our-history-row"
     },
     "children": ["flex-layout.col#our-history-title"]
   },
+
   "flex-layout.col#our-history-title": {
+    "title": "Contenedor Título Por Qué Elegirnos",
     "props": {
       "width": "100%",
       "blockClass": "our-history-card-title"
@@ -124,6 +252,7 @@
   },
 
   "rich-text#why-title": {
+    "title": "Título Por Qué Elegirnos",
     "props": {
       "text": "¿Por Qué Elegirnos?",
       "blockClass": "section-title"
@@ -131,6 +260,7 @@
   },
 
   "rich-text#why-description": {
+    "title": "Descripción Por Qué Elegirnos",
     "props": {
       "text": "Somos líderes en tecnología y innovación, comprometidos con ofrecer la mejor experiencia de compra",
       "blockClass": "why-description"
@@ -138,6 +268,7 @@
   },
 
   "flex-layout.row#our-history": {
+    "title": "Sección Nuestra Historia",
     "props": {
       "blockClass": "our-history-row"
     },
@@ -145,6 +276,7 @@
   },
 
   "flex-layout.col#our-history-content": {
+    "title": "Contenido Nuestra Historia",
     "props": {
       "width": "100%",
       "blockClass": "our-history-card"
@@ -158,6 +290,7 @@
   },
 
   "rich-text#history-title": {
+    "title": "Título Nuestra Historia",
     "props": {
       "text": "Nuestra Historia",
       "blockClass": "history-title"
@@ -165,6 +298,7 @@
   },
 
   "rich-text#history-text1": {
+    "title": "Párrafo 1 Nuestra Historia",
     "props": {
       "text": "Desde 2010, nos hemos dedicado a traer las últimas innovaciones tecnológicas a nuestros clientes. Con más de una década de experiencia, hemos construido una reputación basada en la confianza, calidad y servicio excepcional.",
       "blockClass": "history-paragraph"
@@ -172,6 +306,7 @@
   },
 
   "rich-text#history-text2": {
+    "title": "Párrafo 2 Nuestra Historia",
     "props": {
       "text": "Trabajamos directamente con los principales fabricantes del mundo para garantizar que nuestros productos no solo cumplan, sino que superen las expectativas. Cada producto en nuestro catálogo ha sido cuidadosamente seleccionado por nuestro equipo de expertos.",
       "blockClass": "history-paragraph"
@@ -179,6 +314,7 @@
   },
 
   "rich-text#history-text3": {
+    "title": "Párrafo 3 Nuestra Historia",
     "props": {
       "text": "Creemos que la tecnología debe ser accesible para todos, por eso ofrecemos opciones de financiación flexibles y un servicio al cliente que está siempre disponible para ayudarte a encontrar el producto perfecto para tus necesidades.",
       "blockClass": "history-paragraph"
@@ -186,6 +322,7 @@
   },
 
   "country-carousel": {
+    "title": "Carrusel de Países",
     "props": {
       "blockClass": "custom-carousel"
     }

@@ -24,7 +24,9 @@
     "vtex.product-review-interfaces": "1.x",
     "vtex.seller-selector": "0.x",
     "vtex.device-detector": "0.x",
-    "vtex.add-to-cart-button": "0.x"
+    "vtex.add-to-cart-button": "0.x",
+    "vtex.store-footer": "2.x",
+    "vtex.menu": "2.x"
   },
   "peerDependencies": {
     "vtex.reviews-and-ratings": "3.x"

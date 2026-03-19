@@ -40,6 +40,53 @@
   text-align: center !important;
 }
 
+:global(.vtex-flex-layout-0-x-flexRowContent--sectionTitle) {
+  width: 100% !important;
+  justify-content: center !important;
+}
+
+:global(.vtex-rich-text-0-x-wrapper--sectionTitle) {
+  width: 100% !important;
+  text-align: center !important;
+  margin: 0 auto !important;
+}
+
+:global(.vtex-rich-text-0-x-wrapper--why-description) {
+  width: 100% !important;
+  text-align: center !important;
+  margin: 0 auto !important;
+}
+
+:global(.vtex-rich-text-0-x-wrapper--section-title) {
+  width: 100% !important;
+  text-align: center !important;
+  margin: 0 auto !important;
+}
+
+:global(.vtex-rich-text-0-x-wrapper--ofertas-title) {
+  width: 100% !important;
+  text-align: left !important;
+  margin: 0 auto !important;
+}
+
+:global(.vtex-rich-text-0-x-paragraph--ofertas-title),
+:global(.vtex-rich-text-0-x-headingLevel2--ofertas-title) {
+  font-size: 28px;
+  font-weight: 700;
+  color: #212529;
+  margin: 30px 0 20px !important;
+  text-align: left !important;
+}
+
+:global(.vtex-rich-text-0-x-paragraph--sectionTitle),
+:global(.vtex-rich-text-0-x-headingLevel2--sectionTitle) {
+  font-size: 28px;
+  font-weight: 700;
+  color: #212529;
+  margin: 30px 0 20px !important;
+  text-align: center !important;
+}
+
 :global(.vtex-rich-text-0-x-container--why-description) {
   width: 100% !important;
   text-align: center !important;
@@ -65,6 +112,30 @@
   border-radius: 16px;
   overflow: hidden;
   margin: 0 auto;
+}
+
+:global(.vtex-store-components-3-x-infoCardHeadline--promo-card) {
+  font-size: 24px !important;
+  font-weight: 400 !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  color: #ffffff !important;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5) !important;
+}
+
+:global(.vtex-store-components-3-x-infoCardSubhead--promo-card) {
+  font-size: 16px !important;
+  font-weight: 400 !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  color: #ffffff !important;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5) !important;
+}
+
+:global(.vtex-store-components-3-x-infoCardImage--promo-card) {
+  filter: brightness(0.7) contrast(1.1) !important;
 }
 
 /* Ocultar CallToAction */

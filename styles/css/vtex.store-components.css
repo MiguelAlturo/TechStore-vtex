@@ -175,7 +175,7 @@
 }
 
 /* Botón transparente */
-:global(.vtex-button) {
+:global(.vtex-tab-layout-0-x-listItem .vtex-button) {
   background: transparent !important;
   border: none !important;
   align-items: center !important;
@@ -398,15 +398,23 @@
   font-weight: 700;
 }
 
-/* add-to-cart-button estilos */
-:global(.vtex-add-to-cart-button-0-x-button) {
+/* Botón Comprar producto */
+:global(.vtex-product-summary-2-x-buyButton) {
   background: #101828 !important;
   color: #fff !important;
   border-radius: 10px !important;
   width: 90% !important;
   margin: 0 auto !important;
-  display: block !important;
+  display: flex !important;
+  justify-content: center !important;
+  text-transform: none !important;
+  padding: 12px 20px !important;
+}
+
+:global(.vtex-product-summary-2-x-buyButtonText) {
+  color: #fff !important;
   text-align: center !important;
+  text-transform: none !important;
 }
 
 /* Botón Comprar */
