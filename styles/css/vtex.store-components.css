@@ -87,7 +87,7 @@
 }
 
 :global(.vtex-tab-layout-0-x-listItemActive) :global(.vtex-button) {
-  background: #fff !important;
+  background-color: #fff !important;
   border: none !important;
   color: #0a0a0a !important;
   box-shadow: none !important;
